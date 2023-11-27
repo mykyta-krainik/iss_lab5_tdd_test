@@ -1,6 +1,7 @@
 import { describe, test, expect, beforeEach } from "vitest";
 
-import { User } from "../app.ts";
+import { User } from "../controllers/User.controller.ts";
+
 
 describe("User", () => {
     let user: User;

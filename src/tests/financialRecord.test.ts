@@ -1,11 +1,9 @@
-import {beforeEach, describe, expect, test} from "vitest";
+import { beforeEach, describe, expect, test } from "vitest";
 
-import {
-    FinancialRecord,
-    FinancialRecordExpenseCategory,
-    FinancialRecordIncomeCategory,
-    FinancialRecordType
-} from "../app.ts";
+import { FinancialRecord } from "../controllers/FinancialRecord.controller.ts";
+import { FinancialRecordType } from "../enums/FinancialRecordType.ts";
+import { FinancialRecordExpenseCategory } from "../enums/FinancialRecordExpenseCategory.ts";
+import { FinancialRecordIncomeCategory } from "../enums/FinancialRecordIncomeCategory.ts";
 
 describe("FinancialRecord", () => {
     test("should be created", () => {
